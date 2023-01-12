@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment_1</title>
+    <style>
+        #header
+        {
+            border: 4px solid gray;
+            border-radius: 9px;
+            background-color: aquamarine;
+            position:sticky;
+            top:0px;
+        }
+        .store_name
+        {
+            text-align: center;
+            position:absolute;
+            top:5px;
+            left: 500px;
+            padding:0px 3px 1px 5px;
+            color:darkmagenta;
+            border-style: hidden;
+        }
+        .example
+        {
+            padding:23px 2px 7px 1px;
+            float: right;   
+        }
+        .section
+        {
+            width: 40%;
+        }
+        table,tr
+        {
+            
+            border:1px solid black;
+            width:70%;
+            border-collapse: collapse;
+            text-align: center; 
+             table-layout: fixed;    
+            
+        }
+        th{
+            background-color:deeppink;
+            font-size: 20px;
+        }
+        
+        button
+        {
+            background-color: rgb(113, 222, 222);
+            border-radius: 9px;
+        }
+        .left_section
+        {
+            background-color:violet;
+            width:30%;
+        }
+        body
+        {
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(199, 171, 47))
+
+        }
+
+/* .v1 {
+  border-right: 4px solid rgb(210, 95, 131);
+  height: 5000px;
+  width: 400px;
+} */
+    </style>
+    <script>
+        function save(event)
+       {
+           event.preventDefault()
+           if(confirm('Do you want to add mobiles?'))
+           {
+           console.log('yes , Added!')
+           }
+           else 
+           {  
+               console.log('No , not yet')
+           }
+       }
+   </script>
+</head>
+
+<body>
+    <div id="header" >
+        <img src="https://img.freepik.com/free-vector/gradient-mobile-store-logo-design_23-2149699853.jpg?w=2000" width="75" height="75"alt="PHONE_LOGO">
+        <h1 class="store_name"> MOBILE PHONE PRODUCT STORE</h1>
+        <form class="example">
+            <input type="text" placeholder="search here..." name="search">
+            <button type="submit"><i class="search">submit</i></button>
+        </form>
+        <a href="./about.html" style="font-size: 20px;"> About us...</a>
+        <a href="./contact.html" style="font-size: 20px;">Contact us</a>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <table align="right">
+        <tr>
+            <th>Mobile Phone</th>
+            <th>Brand</th>
+            <th>Image</th>
+            <th>Rating</th>
+            <th>RAM Size</th>
+            <th>ROM Size</th>
+            <th>Price</th>
+            <th>Move to Cart</th>
+        </tr>
+        <tr style="background-color: aqua;">
+            <td><pre>Vivo V20</pre></td>
+            <td ><pre>   VIVO   </pre></td>
+            <td><img src="https://img3.gadgetsnow.com/gd/images/products/additional/large/G200279_View_3/mobiles/smartphones/vivo-v20-128-gb-moonlight-sonata-8-gb-ram-.jpg" width=120" height=150" alt="vivo v20"></td>
+            <td>&#9733;&#9733;&#9733;&#9733;</td>
+            <td><pre>  8 GB  </pre></td>
+            <td><pre>  128 GB  </pre></td>
+            <td><pre>  &#8377;24500   </pre></td>
+            <td >
+                <button>Add_To_Cart</button>
+            </td>
+        </tr>
+        <tr>
+            <td><pre>Samsung Galaxy F23 
+            5G</pre></td>
+            <td ><pre>   SAMSUNG   </pre></td>
+            <td><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTH6A4q9lFNV_k8v7hmCkyFy0LfUPUinwRHfwv9MX1kczE0fFIw-Nks1LGGMxtqnwFmpPK5boTRF2rPhz6mqBLLyrav67GkOahs_rsLapkA&usqp=CAE" width="100" height="150" alt="samsung galaxy"></td>
+            <td>&#9733;&#9733;&#9733;</td>
+            <td><pre>  6 GB  </pre></td>
+            <td><pre>  64 GB  </pre></td>
+            <td><pre>  &#8377;150000   </pre></td>
+            <td >
+                <button>Add_To_Cart</button>
+            </td>
+        </tr>
+        <tr style="background-color: aqua;">
+            <td><pre>Apple iPhone 13</pre></td>
+            <td ><pre>   APPLE  </pre></td>
+            <td><img src="https://img6.gadgetsnow.com/gd/images/products/additional/large/G390858_View_1/mobiles/smartphones/apple-iphone-14-pro-max-256-gb-deep-purple-6-gb-ram-.jpg" width="120" height="150"alt="Apple iPhone"></td>
+            <td>&#9733;&#9733;&#9733;&#9733;</td>
+            <td><pre>  6 GB  </pre></td>
+            <td><pre>  128 GB  </pre></td>
+            <td><pre>  &#8377;60000   </pre></td>
+            <td >
+                <button>Add_To_Cart</button>
+            </td>
+        </tr>
+        <tr>
+            <td><pre>IQOO 9T 5G</pre></td>
+            <td ><pre>   VIVO   </pre></td>
+            <td><img src="https://m.media-amazon.com/images/I/41j1PwNtdbS._SX300_SY300_QL70_FMwebp_.jpg" width="150" height="150" alt="IQOO phone"></td>
+            <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+            <td><pre>  8 GB  </pre></td>
+            <td><pre>  128 GB  </pre></td>
+            <td><pre>  &#8377;49000   </pre></td>
+            <td >
+                <button>Add_To_Cart</button>
+            </td>
+        </tr>
+        <tr style="background-color: aqua;">
+            <td><pre>Realme GT 2 PRO</pre></td>
+            <td ><pre>   REALME   </pre></td>
+            <td><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRDuThG7CI2Z9ogg-inEif0E-oiMU8NWKxxq17a-2p8l3NAidPm1eMNxMsiKwUvw4LtFiSP9sf_HDbZ5ikl0ru8D4Ka8lPaFQ" width="100" height="150" alt="realme"></td>
+            <td>&#9733;&#9733;&#9733;</td>
+            <td><pre>  8 GB  </pre></td>
+            <td><pre>  128 GB  </pre></td>
+            <td><pre>  &#8377;50000   </pre></td>
+            <td >
+                <button>Add_To_Cart</button>
+            </td>
+          
+        </tr>
+        <tr>
+            <td><pre>OPPO Reno8 pro 5G</pre></td>
+            <td ><pre>   OPPO   </pre></td>
+            <td><img src="https://www.reliancedigital.in/medias/Oppo-CPH2357-Smart-Phones-492850896-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMjcwODF8aW1hZ2UvanBlZ3xpbWFnZXMvaDZmL2hiOS85ODgyMTY3NzA1NjMwLmpwZ3xmYTIyZWM5MGFkZjc0ZGRjYTBjNzc3MWYxMTZlZDFiZmQ5NzZmNTMzNTY5OWVjZjQxYWE4NjFhOTg3OTQ4N2M0" width=150" height=150" alt="OPPO"></td>
+            <td>&#9733;&#9733;&#9733;&#9733;</td>
+            <td><pre>  12 GB  </pre></td>
+            <td><pre>  256 GB  </pre></td>
+            <td><pre>  &#8377;45,999  </pre></td>
+            <td >
+                <button>Add_To_Cart</button>
+            </td>
+            
+        </tr>
+        <tr style="background-color: aqua;">
+            <td><pre>Xiaomi 11T Pro 5G</pre></td>
+            <td ><pre>   XIAOMI  </pre></td>
+            <td><img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662444582/Croma%20Assets/Communication/Mobiles/Images/247130_dlg1g6.png/mxw_2256,f_auto" width="150" height="150"alt="Xiaomi"></td>
+            <td>&#9733;&#9733;&#9733;&#9733;</td>
+            <td><pre>  6 GB  </pre></td>
+            <td><pre>  128 GB  </pre></td>
+            <td><pre>  &#8377;40900   </pre></td>
+            <td >
+                <button>Add_To_Cart</button>
+            </td>
+        </tr>
+        <tr>
+            <td><pre>Mi 10T Pro</pre></td>
+            <td ><pre>   MI   </pre></td>
+            <td><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1641445095.06029150.png" width="150" height="150" alt="MI"></td>
+            <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+            <td><pre>  8 GB  </pre></td>
+            <td><pre>  128 GB  </pre></td>
+            <td><pre>  &#8377;47999   </pre></td>
+            <td >
+                <button>Add_To_Cart</button>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+    <div class="left_section">
+        <h2 style="background-color:rgba(170, 209, 61, 0.847)">New Mobile Section</h2>
+        <hr>
+        <br><br>
+    <form class="new_section" onsubmit="return save(event)">
+        <label for="mobile name">Mobile name : </label>
+        <input type="pass" placeholder="Mobile name here.." name="mobile name">
+        <br>
+        <br><br><br>
+        <label for="brand">Brand Name : </label>
+        <input type="text" placeholder="Brand name here.." name="brand name">
+        <br>
+        <br><br><br>
+        <label for="inserting a image">Insert an image : </label>
+        <input type="file" id="myfile">
+        <br>
+        <br><br><br>
+        <tr>
+            <td class="tdlabel">
+                <label for="RAM SIZE" class="label">RAM Size :</label>
+            </td>
+            <td>
+                <select name="RAM Size" id="RAM SIZE" style = "width :160px" >
+                <option value="CHOOSE RAM">Choose RAM ...</option>
+                <option value="2 GB">2 GB</option>
+                <option value="4 GB">4 GB</option>
+                <option value="6 GB">6 GB</option>
+                <option value="8 GB">8 GB</option>
+                
+            </select>
+            </td>
+        </tr>
+        <br><br><br>
+        <br>
+        <tr>
+            <td class="tdlabel">
+                <label for="ROM SIZE" class="label">ROM Size :</label>
+            </td>
+            <td>
+                <select name="ROM Size" id="ROM SIZE" style = "width :160px" >
+                <option value="CHOOSE ROM">Choose ROM ...</option>
+                <option value="2 GB">32 GB</option>
+                <option value="4 GB">64 GB</option>
+                <option value="6 GB">128 GB</option>
+                <option value="8 GB">256 GB</option>
+                
+            </select>
+            </td>
+        </tr>
+        <br><br><br>
+        <br>
+        <label for="Mobile price">Mobile price : </label>
+        <input type="pass" placeholder="Enter mobile price.." name="Mobile price">
+        <br>
+        <br>
+        <br>
+        <button type="Add new Mobile" >Add new Mobile</button>
+        <p> The below link can also be used to save the new mobile product to showcase in the product list page <a href="http://127.0.0.1:5500/NEW%20MOBILE%20SECTION.html">get link</a></p>
+
+    </form>
+    </div>
+    <br>
+    <br>
+    <img src="https://www.itel-india.com/wp-content/uploads/2021/05/pongal-750x565.jpg"width=400 height="400" alt="pongal offer">
+    <br>
+    <h1><i>PONGAL MEGE OFFER!!!!!!</i></h1>
+    
+</body>
+</html>
