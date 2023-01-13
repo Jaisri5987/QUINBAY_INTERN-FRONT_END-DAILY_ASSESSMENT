@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body
+        {
+            background-image: url("data:image/jpeg;base64,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");
+        } */
+    
+    #header
+        {
+            border: 4px solid gray;
+            border-radius: 9px;
+            background-color:rgb(230, 208, 89);
+            position:sticky;
+            top:0px;
+            text-align: center;
+            border-radius: 9px;
+            
+        }
+       
+
+    .grid-container{
+  display: grid;
+  row-gap: 5px;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: #80cb3a;
+  padding: 0px;
+  column-gap:5%;
+}
+
+.grid-item {
+   /* background-color:rgb(221, 133, 61);  */
+   /* border: 1px solid rgba(0, 0, 0, 0.8);  */
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;  
+}
+.section
+{
+    display:grid;
+    grid-template-columns: 300px auto 110px;
+    grid-template-rows: 1800px;    
+    padding:10px 10px 10px 10px;
+    width: auto;
+    
+}
+.sec1
+{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: left;
+    background-color: skyblue;
+    
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 0px 10px  ;
+
+}
+.row {
+    margin: 0 30px ;
+    row-gap: 9px;
+    padding:0 20px 40px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 600px) {
+  .grid-container {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #9c79d0;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+@media(max-width:900px)
+        {
+        body
+        {
+            width:100%;
+        }
+      }
+
+
+    </style>
+    <script src="myjavascript.js">
+
+    </script>
+</head>
+<body>
+    <div class="grid-container" id="header">
+       <div class="grid-item" ><img src="https://img.freepik.com/free-vector/gradient-mobile-store-logo-design_23-2149699853.jpg?w=2000" width="50" height="50"alt="PHONE_LOGO"></div>
+        <div class="grid-item"><h1> MOBILE PHONE PRODUCT LIST</h1></div>
+        <div class="grid-item" >
+            <form >
+            <input type="text" placeholder="search here..." name="search" >
+            <button type="submit" onclick="my_javascript()"><i >submit</i></button>
+    </div>
+    <div class="grid-item" style="text-align: center;">  <a href="./about.html" style="font-size: 20px;"> About us...</a></div>
+<div class="grid-item">   <a href="./contact.html" style="font-size: 20px;">Contact us</a></div>
+    </div>
+
+    <div class="section">
+        <div class="sec1"><h1 style="text-align: center; background-color: crimson;">Filter</h1>
+        <label for="price" id="price" > PRICE : </label><br><br>
+        <input type="checkbox" id="RS.10000 - RS.15000" name="price" value="RS.10000 - RS.15000" />RS.10000 - RS.15000<br>
+        <input type="checkbox" id="RS.10000 and Below" name="price" value="RS.10000 and Below" />RS.10000 and Below<br>
+        <input type="checkbox" id="RS.15000 - RS.30000" name="price" value="RS.15000 - RS.30000" />RS.15000 - RS.30000<br>
+        <input type="checkbox" id="RS.30000 and Above" name="price" value="RS.30000 and Above" />RS.30000 and Above
+    
+        <br>
+        <br>
+        <label for="customer rating">CUSTOMER RATING :</label>
+         <br>
+         <br>
+         <input type="checkbox" id="4"name="customer rating" value="4 and above" />4&#9733; and above<br>
+        <input type="checkbox" id="5" name="customer rating" value="3 and above" />3&#9733;  and above<br> 
+        <br>
+        <br>
+        <label for="RAM" > RAM STORAGE: </label>
+        <br>
+        <br>
+        <input type="checkbox" id="12 GB" name="RAM" value="12 GB" />12 GB<br>
+        <input type="checkbox" id="8 GB" name="RAM" value="8 GB" />8 GB<br>
+        <input type="checkbox" id="6 GB" name="RAM" value="6 GB" />6 GB<br>
+        <input type="checkbox" id="4 GB" name="RAM" value="4 GB" />4 GB
+    <br>
+    <br>
+    <label for="ROM" > ROM STORAGE: </label>
+    <br>
+    <br>
+    <input type="checkbox" id="256 GB" name="ROM" value="256 GB" />256 GB<br>
+    <input type="checkbox" id="128 GB" name="ROM" value="128 GB" />128 GB<br>
+    <input type="checkbox" id="64 GB" name="ROM" value="64 GB" />64 GB<br>
+    <input type="checkbox" id="32 GB" name="ROM" value="32 GB" />32 GB
+<br>
+<br>
+<label for="SIZE"> SIZE : </label>
+    <br>
+    <br>
+    <input type="checkbox" id="6.4 inch and above" name="SIZE" value="256 GB" />6.4 inch and above<br>
+    <input type="checkbox" id="6.3 inch" name="SIZE" value="128 GB" />6.3 inch <br>
+    <input type="checkbox" id="Below 6.3 inch" name="SIZE" value="64 GB" />Beloe 6.3 inch
+<br>
+<br>
+<label for="BRAND"> BRAND : </label>
+    <br>
+    <br>
+    <input type="radio" id="brand" name="brand" value="VIVO" required/>VIVO<br>
+    <input type="radio" id="brand" name="brand" value="OPPO" required/>OPPO <br>
+    <input type="radio" id="brand" name="brand" value="README" required/>README<br>
+    <input type="radio" id="brand" name="brand" value="REALME" required/>REALME<br>
+    <input type="radio" id="brand" name="brand" value="apple" required/>APPLE<br>
+    <input type="radio" id="brand" name="brand" value="SAMSUNG" required/>SAMSUNG
+<br>
+<br>
+<button type="submit" ><i class="search">filter it</i></button>
+</form>  
+
+<br>
+<h2><center>Add new mobiles</center></h2>
+<form class="new_section" onsubmit="save(event)" id="addmobileform">
+  <label for="mobile name">Mobile name : </label>
+  <input type="pass" placeholder="Mobile name here.." name="mobile name" id="username">
+  <br>
+  <br><br><br>
+  <label for="brand">Brand Name : </label>
+  <input type="text" placeholder="Brand name here.." name="brand name">
+  <br>
+  <br><br><br>
+  <label for="inserting a image">Insert an image : </label>
+  <input type="file" id="myfile">
+  <br>
+  <br><br><br>
+  <tr>
+      <td class="tdlabel">
+          <label for="RAM SIZE" class="label">RAM Size :</label>
+      </td>
+      <td>
+          <select name="RAM Size" id="RAM SIZE" style = "width :160px" >
+          <option value="CHOOSE RAM">Choose RAM ...</option>
+          <option value="2 GB">2 GB</option>
+          <option value="4 GB">4 GB</option>
+          <option value="6 GB">6 GB</option>
+          <option value="8 GB">8 GB</option>
+          
+      </select>
+      </td>
+  </tr>
+  <br><br><br>
+  <br>
+  <tr>
+      <td class="tdlabel">
+          <label for="ROM SIZE" class="label">ROM Size :</label>
+      </td>
+      <td>
+          <select name="ROM Size" id="ROM SIZE" style = "width :160px" >
+          <option value="CHOOSE ROM">Choose ROM ...</option>
+          <option value="2 GB">32 GB</option>
+          <option value="4 GB">64 GB</option>
+          <option value="6 GB">128 GB</option>
+          <option value="8 GB">256 GB</option>
+          
+      </select>
+      </td>
+  </tr>
+  <br><br><br>
+  <br>
+  <label for="Mobile price">Mobile price : </label>
+  <input type="pass" placeholder="Enter mobile price.." name="Mobile price">
+  <br>
+  <br>
+  <br>
+  <button type="Add new Mobile"  >Add new Mobile</button>
+  <p> The below link can also be used to save the new mobile product to showcase in the product list page <a href="http://127.0.0.1:5500/NEW%20MOBILE%20SECTION.html">get link</a></p>
+
+</form>
+
+    </div>
+
+    
+        <div class="sec1"><h1 style="text-align: center;">Mobiles</h1>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <h3>VIVO V20</h3>
+                    <hr><br>
+                    <img src="https://img3.gadgetsnow.com/gd/images/products/additional/large/G200279_View_3/mobiles/smartphones/vivo-v20-128-gb-moonlight-sonata-8-gb-ram-.jpg" width=200" height=200" alt="vivo v20">
+            <p>8 GB RAM<p>
+            <p>128 GB ROM</p>
+            <p>&#9733;&#9733;&#9733;&#9733;</p>
+            <p> &#8377;24500 </p>
+            <p>
+                <button>Add_To_Cart</button>
+            </p>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <h3>REALME GT 2 PRO</h3>
+                    <hr><br>
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRDuThG7CI2Z9ogg-inEif0E-oiMU8NWKxxq17a-2p8l3NAidPm1eMNxMsiKwUvw4LtFiSP9sf_HDbZ5ikl0ru8D4Ka8lPaFQ" width="170" height="200" alt="Realme">
+            <p>8 GB RAM<p>
+            <p>128 GB ROM</p>
+            <p>&#9733;&#9733;&#9733;</p>
+            <p> &#8377;50000 </p>
+            <p>
+                <button>Add_To_Cart</button>
+            </p>
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                    <h3>APPLE Iphone 13</h3>
+                    <hr><br>
+                    <img src="https://img6.gadgetsnow.com/gd/images/products/additional/large/G390858_View_1/mobiles/smartphones/apple-iphone-14-pro-max-256-gb-deep-purple-6-gb-ram-.jpg" width=170" height=200" alt="APPLE">
+            <p>6 GB RAM<p>
+            <p>128 GB ROM</p>
+            <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p> &#8377;60000 </p>
+            <p>
+                <button>Add_To_Cart</button>
+            </p>
+                  </div>
+                </div>    
+            </div>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <h3>Mi 10T Pro</h3>
+                    <hr><br>
+                    <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1641445095.06029150.png" width="170" height="200" alt="mi">
+            <p>8 GB RAM<p>
+            <p>128 GB ROM</p>
+            <p>&#9733;&#9733;&#9733;&#9733;</p>
+            <p> &#8377;47999 </p>
+            <p>
+                <button>Add_To_Cart</button>
+            </p>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <h3>Samsung Galaxy F23 </h3>
+                    <hr><br>
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTH6A4q9lFNV_k8v7hmCkyFy0LfUPUinwRHfwv9MX1kczE0fFIw-Nks1LGGMxtqnwFmpPK5boTRF2rPhz6mqBLLyrav67GkOahs_rsLapkA&usqp=CAE" width="170" height="200" alt="samsung">
+            <p>6 GB RAM<p>
+            <p>64 GB ROM</p>
+            <p>&#9733;&#9733;&#9733;</p>
+            <p> &#8377;15000 </p>
+            <p>
+                <button>Add_To_Cart</button>
+            </p>
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                    <h3>Xiaomi 11T Pro 5G</h3>
+                    <hr><br>
+                    <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662444582/Croma%20Assets/Communication/Mobiles/Images/247130_dlg1g6.png/mxw_2256,f_auto" width=170" height=200" alt="Xiaomi">
+            <p>6 GB RAM<p>
+            <p>128 GB ROM</p>
+            <p>&#9733;&#9733;&#9733;&#9733;</p>
+            <p> &#8377;40900</p>
+            <p>
+                <button>Add_To_Cart</button>
+            </p>
+                  </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="sec1" style="text-align: center; background-color: darkorchid;"><h3>Shopping Cart</h3></div>
+
+    </div>
+    <footer>
+        <p style="text-align: left;">Copyright &#169; 2023 Mobile phone product list. All Rights Reserved</p>
+        <p style="text-align: center;">Email-Id : Mobileproductlist@gmail.com</p>
+        <p style="text-align: right;">wedbsite: www.https://Mobileproductlist.com/</p>
+      </footer>
+      
+</body>
+</html>
